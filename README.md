@@ -1,12 +1,12 @@
-# React + Vite
+# Фронтенд для сервиса провайдера
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ну, смотрите, какая маза
+я начал делать курсовую по методам и средствам проектирования информационных систем и технологий
+а там по сути надо реализовать интерфейс для взаимодействия с базой данных
+я попал в типа проект, где стек - React JS, Java Spring, PostgreSQL
 
-Currently, two official plugins are available:
+собственно, я подумал, что хорошим способом попрактиковаться в этих приколах будет курсовая
+тема - провайдер
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+там есть менеджер, который по тарифам ебашится
+там есть... хз, админ, создающий тарифы? дальше манагера по клиентам я не ушел
