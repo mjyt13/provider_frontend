@@ -1,4 +1,4 @@
-Фронтенд для сервиса провайдера
+# Фронтенд для сервиса провайдера
 Ну, смотрите, какая маза я начал делать курсовую по методам и средствам проектирования информационных систем и технологий а там по сути надо реализовать интерфейс для взаимодействия с базой данных я попал в типа проект, где стек - React JS, Java Spring, PostgreSQL
 
 собственно, я подумал, что хорошим способом попрактиковаться в этих приколах будет курсовая тема - провайдер
@@ -8,7 +8,7 @@
 о бля, фижма - https://www.figma.com/design/5sSWKHITU8eBn6eGJW7l9q/Untitled?node-id=19-32&t=PXQuuUvG48ZdXWjG-1
 
 
-# React + TypeScript + Vite
+React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
