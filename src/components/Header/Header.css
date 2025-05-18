@@ -1,0 +1,22 @@
+/* шапка */
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 15rem;
+    align-items: center;
+    padding: 0 5rem;
+    justify-content: space-between;
+    width: 100vw; 
+    /* margin-left: calc(-50vw + 50%); */
+}
+
+.header .header_logo{
+    display: flex;
+    gap: 2rem;
+}
+
+.header .header_name{
+    display: flex;
+
+}

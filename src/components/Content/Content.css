@@ -1,0 +1,115 @@
+/* основное (в данном случае тарифы) */
+.content{
+    padding: 1rem 2rem;
+    overflow: visible;
+    width: 100%;
+}
+
+
+@media (max-width:320px) {
+    .content{
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* часть для списка тарифов */
+
+.content_tariffes {
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+    list-style: none;
+    gap: 6rem;
+    width: 100%;
+}
+
+@media (max-width:800px) {
+    .content_tariffes{
+        gap: 6rem;
+    }
+}
+
+@media (max-width:320px) {
+    .content_tariffes{
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+/* часть конкретно для одного тарифа */
+
+.tariffe{
+    width: calc(33.33% - 0rem);
+    height: 46rem;
+    
+    padding: 1rem ;
+    border: solid black;
+    border-radius: 1px;
+
+    position: relative;
+    flex-shrink: 0;
+}
+
+.tariffe:hover {
+    border-color: mediumblue;
+}
+
+.tariffe-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit; /* Наследует цвет текста от родителя */
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.tariffe-link:hover{
+    color: darkblue
+}
+
+.tariffe_name{
+    align-self:center;
+    padding: 0 0 1rem 0;
+}
+
+.tariffe_characteristics{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+}
+
+.tariffe_characteristic{
+    padding: 0.25rem 0;
+    list-style-type: disc;
+}
+
+
+@media (max-width: 320px) {
+    .tariffe{
+        width: calc(100%);
+        height: calc(100%);
+    }
+
+    .tariffe-link{
+
+    }
+
+    .tariffe_name{
+        font-size: 60px;
+    }
+
+    .tariffe_characteristics{
+
+    }
+
+    .tariffe_characteristic{
+
+    }
+    
+    .tariffe_characteristic_text{
+        font-size: 24px;
+    }    
+}

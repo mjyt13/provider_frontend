@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -39,4 +38,56 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* сброс стилей */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./src/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: red;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+}
+
+a{
+    /* Настройка стиля ссылки\якоря */
+    color: #000;
+    background-color: transparent;
+    font-size: 18px;
+    text-decoration: none;
+    /* Убирает подчеркивание ссылки */
+}
+
+ul li {
+    font-size: 24px;
+    list-style: none;
+}
+
+h1 {
+    font-size: 90px;
+    color: #fff;
+}
+
+h2{
+    font-size: 60px;
+}
+
+h3{
+    font-size: 48px;
+    font-weight:normal;
 }
