@@ -19,7 +19,8 @@
     flex-wrap: wrap;
     user-select: none;
     list-style: none;
-    gap: 6rem;
+    justify-content:flex-start;
+    gap: 4.8rem;
     width: 100%;
 }
 
@@ -39,7 +40,7 @@
 /* часть конкретно для одного тарифа */
 
 .tariffe{
-    width: calc(33.33% - 0rem);
+    width: calc(29% - 0rem);
     height: 46rem;
     
     padding: 1rem ;
@@ -93,22 +94,22 @@
         height: calc(100%);
     }
 
-    .tariffe-link{
+    /* .tariffe-link{
 
-    }
+    } */
 
     .tariffe_name{
         font-size: 60px;
     }
 
-    .tariffe_characteristics{
+    /* .tariffe_characteristics{
 
     }
 
     .tariffe_characteristic{
 
     }
-    
+     */
     .tariffe_characteristic_text{
         font-size: 24px;
     }    

@@ -1,14 +1,13 @@
 // import { useState } from 'react'
 import './App.css'
-import Header from './components/Header/Header'
-import Content from './components/Content/Content'
+// import TariffesPage from "./pages/TariffesPage/TariffesPage.tsx"
+import ClientsPage from './pages/СlientsPage/ClientsPage'
 
 function App() {
 
   return (
     <>
-      <Header/>
-      <Content/>
+      <ClientsPage />
     </>
   )
 }

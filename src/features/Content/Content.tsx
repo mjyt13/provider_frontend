@@ -1,6 +1,6 @@
 import type { JSX } from 'react'
 import './Content.css'
-import contentData, { type tariffe } from '../../mockData/content';
+import type {content, tariffe} from "./content"
 
 function TariffeCharacteristics({tariffe}:{tariffe: tariffe}):JSX.Element{
   return (
@@ -16,7 +16,6 @@ function TariffeCharacteristics({tariffe}:{tariffe: tariffe}):JSX.Element{
     </a>
   )
 }
-
 
 function ContentTariffes({tariffes}:{tariffes: tariffe[]}):JSX.Element{
   return(
@@ -34,7 +33,7 @@ function ContentTariffes({tariffes}:{tariffes: tariffe[]}):JSX.Element{
   )
 }
 
-function Content(): JSX.Element {
+function Content(contentData: content): JSX.Element {
     const tariffesData = contentData.tariffes
     return (
       <section className="content">
