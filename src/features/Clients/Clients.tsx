@@ -1,5 +1,6 @@
 import { type JSX } from "react";
 import tariffe1Data from "../../mockData/clients/clients";
+import Button from "../../widgets/Button/Button";
 import type {tariffe_header, client} from "../../mockData/clients/clients"
 
 function Header(header: tariffe_header):JSX.Element{
@@ -7,7 +8,7 @@ function Header(header: tariffe_header):JSX.Element{
         <div className="tariffe_header">
             <h2 className="tariffe_name">{header.tariffe_name}</h2>
             <h3 className="tariffe_description">{header.tariffe_desc}</h3>
-            <button className="add_client">добавить клиента</button>
+            <Button textname={"добавить клиента"}/>
         </div>
     )
 }
