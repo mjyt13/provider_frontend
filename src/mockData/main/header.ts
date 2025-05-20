@@ -9,7 +9,7 @@ const h_logo: header_logo = {
         src:"./src/assets/_.svg",
         alt:"questionmark"
     },
-    href:"#"
+    href:"/"
 }
 
 const h_name: header_name = {

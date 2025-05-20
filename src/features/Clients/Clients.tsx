@@ -39,6 +39,7 @@ function ClientsList({clients}:{clients: client[]}):JSX.Element{
                     <h3 className="client_expiration">{client.expiration.toLocaleDateString()}</h3>
                     <h3 className="client_debt">{client.debt + " тугриков"}</h3>
                     <div className="client_more">
+                        <Back href={"#"}/>
                         <Button textname="подробнее"/>
                     </div>
                 </li>

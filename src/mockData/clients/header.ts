@@ -3,14 +3,14 @@ import type { header_logo, header_name, header } from "../../widgets/Header/head
 // sugubo mockData
 const h_logo: header_logo = {
     curves:  {
-        src:"./src/assets/logo.svg",
+        src:"/src/assets/logo.svg",
         alt:"curves",
     },
     questionmark:{
-        src:"./src/assets/_.svg",
+        src:"/src/assets/_.svg",
         alt:"questionmark"
     },
-    href:"#"
+    href:"/"
 }
 
 const h_name: header_name = {

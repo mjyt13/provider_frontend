@@ -8,7 +8,7 @@ const mainData: service[] = [
             tariffes: 4,
             revenue: 9000
         },
-        href:"#"
+        href:"/tariffes"
     },
     {
         name:"телефония",
@@ -17,7 +17,7 @@ const mainData: service[] = [
             tariffes:3,
             revenue:11292.4
         },
-        href:"#"
+        href:"/tariffes"
     }
 ]
 
