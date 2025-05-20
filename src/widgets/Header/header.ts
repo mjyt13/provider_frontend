@@ -5,7 +5,8 @@ export type img ={
 
 export type header_logo = {
     curves: img,
-    questionmark: img
+    questionmark: img,
+    href:string
 }
 
 export type header_name = {textname: string}

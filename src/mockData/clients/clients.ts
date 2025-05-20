@@ -1,6 +1,7 @@
 export type tariffe_header ={
     tariffe_name: string,
-    tariffe_desc: string
+    tariffe_desc: string,
+    back_ref: string
 }
 
 export type client = {
@@ -17,7 +18,8 @@ export type tariffe_clients = {
 const tariffe1Data: tariffe_clients ={
     header: {
         tariffe_name: "1 тариф",
-        tariffe_desc: "отличный тариф для нежелающих откинуться раньше времени"
+        tariffe_desc: "отличный тариф для нежелающих откинуться раньше времени",
+        back_ref: "#"
     },
     clients : [
         {

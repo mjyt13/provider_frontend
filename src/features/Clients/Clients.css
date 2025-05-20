@@ -1,0 +1,109 @@
+/*  стили для шапки */
+.tariffe_clients{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 2rem;
+}
+
+.tariffe_header{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.tariffe_more{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tariffe_description{
+    width: 40%;
+    text-align: start;
+    margin: 0 0 0 0rem;
+}
+
+.tariffe_action{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: end;
+}
+
+.tariffe_action .generic_button{
+    width: 100%;
+    height:5rem;
+    align-self: center;
+    font-size: 32px;
+}
+
+/* стили для карточек с клиентами */
+.client{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: black;
+    border: solid 1px;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+
+.clients_list{
+    display: flex;
+    flex-direction: column;
+    margin:0 2rem;
+}
+
+.clients_declaration{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-color: black;
+    border: solid 1px;
+}
+
+.client_name{
+    width: 37.5%;
+    font-size: 40px;
+}
+
+.client .client_name{
+    text-align: start;
+    padding-left: 1rem;
+}
+
+.client_expiration{
+    font-size: 20px;
+    width: 13.4%;
+}
+
+.client .client_expiration{
+    font-size: 30px;
+    width: 13.4%;
+}
+
+/* задолженность */
+
+.client_debt{
+    font-size: 30px;
+    width: 17.85%;
+}
+
+.client_more{
+    width: 25.22%;
+}
+
+
+/* кнопка подробнее */
+.mock_button{
+    width: 25.22%;
+}
+
+.client .generic_button{
+    font-size: 40px;
+    width: 20rem;
+    height: 5rem;
+}

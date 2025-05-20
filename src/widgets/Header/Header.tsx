@@ -4,10 +4,10 @@ import type { header, header_logo, header_name } from "./header";
 
 function Header_logo(logo: header_logo): JSX.Element{
     return (
-        <div className="header_logo">
-                <img src={logo.curves.src} alt={logo.curves.alt}></img>
-                <img src={logo.questionmark.src} alt={logo.questionmark.alt}></img>
-        </div>
+        <a href={logo.href} className="header_logo">
+            <img src={logo.curves.src} alt={logo.curves.alt}></img>
+            <img src={logo.questionmark.src} alt={logo.questionmark.alt}></img>
+        </a>
     )
 }
 

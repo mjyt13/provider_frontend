@@ -1,19 +1,4 @@
-export type img ={
-    src: string,
-    alt: string
-}
-
-export type header_logo = {
-    curves: img,
-    questionmark: img
-}
-
-export type header_name = {textname: string}
-
-export type header = {
-    logo: header_logo,
-    name: header_name
-}
+import type { header_logo, header_name, header } from "../../widgets/Header/header"
 
 const h_logo: header_logo = {
     curves:  {
@@ -23,7 +8,8 @@ const h_logo: header_logo = {
     questionmark:{
         src:"./src/assets/_.svg",
         alt:"questionmark"
-    }
+    },
+    href:"#"
 }
 
 const h_name: header_name = {
