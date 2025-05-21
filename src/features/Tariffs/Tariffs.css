@@ -41,7 +41,7 @@
 
 .tariffe{
     width: calc(29% - 0rem);
-    height: 46rem;
+    /* height: 46rem; */
     
     padding: 1rem ;
     border: solid black;
@@ -85,6 +85,11 @@
 .tariffe_characteristic{
     padding: 0.25rem 0;
     list-style-type: disc;
+}
+
+.tariffe_characteristic_text{
+    text-align: start;
+    font-size: 20px
 }
 
 

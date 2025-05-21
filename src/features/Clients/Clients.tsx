@@ -1,11 +1,11 @@
 import { type JSX } from "react";
-import tariffe1Data from "../../mockData/clients/clients";
+import { useLoaderData } from "react-router";
 import Button from "../../shared/components/Button/Button";
 import Back from "../../shared/components/Back/Back";
-import type {tariffe_header, client} from "../../mockData/clients/clients"
 import "./Clients.css"
+import type {tariffe_header, client, tariffe_clients } from "./clients";
 
-function Header(header: tariffe_header):JSX.Element{
+function TariffHeader({header}:{header: tariffe_header}):JSX.Element{
     return(
         <div className="tariffe_header">
             <h2 className="tariffe_name">{header.tariffe_name}</h2>
@@ -34,12 +34,10 @@ function ClientsList({clients}:{clients: client[]}):JSX.Element{
                     key={index}
                     itemID={`tariffes-${index}`}
                     className="client">
-
                     <h3 className="client_name">{client.name}</h3>
                     <h3 className="client_expiration">{client.expiration.toLocaleDateString()}</h3>
                     <h3 className="client_debt">{client.debt + " тугриков"}</h3>
                     <div className="client_more">
-                        <Back href={"#"}/>
                         <Button textname="подробнее"/>
                     </div>
                 </li>
@@ -49,12 +47,17 @@ function ClientsList({clients}:{clients: client[]}):JSX.Element{
 }
 
 function Clients():JSX.Element{
-    const headerData = tariffe1Data.header
-    const clientsData = tariffe1Data.clients
+    const data = useLoaderData() as tariffe_clients & {
+        service: string;
+        tariffLink: string;
+    };
+
+    const headerData = data.header
+    const clientsData = data.clients
     return(
         <>
         <div className="tariffe_clients">
-            <Header {...headerData}/>
+            <TariffHeader header={headerData}/>
             <ClientsList clients={clientsData} />
         </div>
         </>

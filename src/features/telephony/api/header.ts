@@ -1,4 +1,4 @@
-import type { header_logo, header_name, header } from "../../widgets/Header/header"
+import type { header_logo, header_name, header } from "../../../widgets/Header/header"
 
 const h_logo: header_logo = {
     curves:  {
@@ -13,7 +13,7 @@ const h_logo: header_logo = {
 }
 
 const h_name: header_name = {
-    textname: "Манагер(главная)"
+    textname: "Тарифы Телефонии"
 }
 
 const headerData: header = {

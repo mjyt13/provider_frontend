@@ -5,5 +5,6 @@ export type tariffe = {
 }
 
 export type content = {
+    service: string
     tariffes: tariffe[]
 }

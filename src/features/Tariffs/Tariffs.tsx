@@ -1,10 +1,11 @@
 import type { JSX } from 'react'
-import './Content.css'
-import type {content, tariffe} from "./content"
+import './Tariffs.css'
+import type {content, tariffe} from "./tariffs.ts"
+import { Link } from 'react-router-dom'
 
-function TariffeCharacteristics({tariffe}:{tariffe: tariffe}):JSX.Element{
+function TariffCharacteristics({service, tariffe}:{service:string,tariffe: tariffe}):JSX.Element{
   return (
-    <a href={tariffe.link} className="tariffe-link">
+    <Link to={`/${service}/${tariffe.link}/clients`} className="tariffe-link">
       <h2 className="tariffe_name">{tariffe.name}</h2>
       <ul className="tariffe_characteristics">
         {tariffe.characteristics.map(
@@ -13,11 +14,11 @@ function TariffeCharacteristics({tariffe}:{tariffe: tariffe}):JSX.Element{
             <h3 className="tariffe_characteristic_text">{char}</h3>
         </li>))}
       </ul>
-    </a>
+    </Link>
   )
 }
 
-function ContentTariffes({tariffes}:{tariffes: tariffe[]}):JSX.Element{
+function ContentTariffs({service,tariffes}:{service:string, tariffes: tariffe[]}):JSX.Element{
   return(
     <ul className="content_tariffes"> 
       {tariffes.map((tariffe,index)=>(
@@ -26,20 +27,21 @@ function ContentTariffes({tariffes}:{tariffes: tariffe[]}):JSX.Element{
          itemID={`tariffes-${index}`} 
          className={`tariffe ${index+1}`}
          >
-          <TariffeCharacteristics tariffe={tariffe} />
+          <TariffCharacteristics service={service} tariffe={tariffe} />
         </li>
     ))}
     </ul>
   )
 }
 
-function Content(contentData: content): JSX.Element {
+function Tariffs(contentData: content): JSX.Element {
+    const serviceData = contentData.service
     const tariffesData = contentData.tariffes
     return (
       <section className="content">
-        <ContentTariffes tariffes ={tariffesData}/>      
+        <ContentTariffs service={serviceData} tariffes={tariffesData}/>      
       </section>
     )
 }
 
-export default Content;
+export default Tariffs;

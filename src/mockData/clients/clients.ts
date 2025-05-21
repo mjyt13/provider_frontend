@@ -1,43 +1,21 @@
-export type tariffe_header ={
-    tariffe_name: string,
-    tariffe_desc: string,
-    back_ref: string
-}
+import type { tariffe_clients } from "../../features/Clients/clients.ts";
 
-export type client = {
-    name: string,
-    expiration:Date,
-    debt: number
-}
-
-export type tariffe_clients = {
-    header: tariffe_header,
-    clients: client[]
-}
-
-const tariffe1Data: tariffe_clients ={
+export const tariffe2Data: tariffe_clients={
     header: {
-        tariffe_name: "1 тариф",
-        tariffe_desc: "отличный тариф для нежелающих откинуться раньше времени",
-        back_ref: "#"
+        tariffe_name: "пранкерский тариф",
+        tariffe_desc: "тариф для шутняр",
+        back_ref: "/internet/tariffs"
     },
     clients : [
-        {
-            name:"свиригайлов стефан костюшко также известный как таборный батька метро пиздаболенко",
-            expiration: new Date(2026,7,12),
-            debt: 900
-        },
         {
             name:"еблн сраный маняк",
             expiration: new Date(2027,1,14),
             debt: 200
         },
         {
-            name:"дамо тамаки также известный как гном гномыч также известный как пидрила гнойная",
+            name:"игорь гофман",
             expiration: new Date(2026,11,29),
-            debt: 2000
+            debt: 201
         }
     ]
 }
-
-export default tariffe1Data

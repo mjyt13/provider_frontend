@@ -1,6 +1,7 @@
 export type tariffe_header ={
     tariffe_name: string,
-    tariffe_desc: string
+    tariffe_desc: string,
+    back_ref: string
 }
 
 export type client = {
