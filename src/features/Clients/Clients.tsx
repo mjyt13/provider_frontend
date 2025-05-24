@@ -1,11 +1,12 @@
 import { type JSX } from "react";
-import { useLoaderData } from "react-router";
 import Button from "../../shared/components/Button/Button";
 import Back from "../../shared/components/Back/Back";
 import "./Clients.css"
 import type {tariffe_header, client, tariffe_clients } from "./clients";
+import { useTariffClients } from "../../hooks/useClients";
 
 function TariffHeader({header}:{header: tariffe_header}):JSX.Element{
+    console.log(header);
     return(
         <div className="tariffe_header">
             <h2 className="tariffe_name">{header.tariffe_name}</h2>
@@ -47,13 +48,11 @@ function ClientsList({clients}:{clients: client[]}):JSX.Element{
 }
 
 function Clients():JSX.Element{
-    const data = useLoaderData() as tariffe_clients & {
-        service: string;
-        tariffLink: string;
-    };
+    const data = useTariffClients(); 
+    console.log(data)
+    const headerData = data.header;
+    const clientsData = data.clients;
 
-    const headerData = data.header
-    const clientsData = data.clients
     return(
         <>
         <div className="tariffe_clients">

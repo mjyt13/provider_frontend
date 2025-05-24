@@ -7,11 +7,11 @@ function Service(item: service):JSX.Element{
     return(
         <>
             <a href={item.href} className="service_name">{item.name}</a>
-            <ul className="service_description">
+            {/* <ul className="service_description">
                 <li className="service_clients">клиентов: {item.description.clients}</li>
                 <li className="service_tariffes">тарифов: {item.description.tariffes}</li>
                 <li className="service_revenue">выручка? {item.description.revenue}</li>
-            </ul>
+            </ul> */}
         </>
     )
 }

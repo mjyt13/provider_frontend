@@ -2,6 +2,7 @@ import type { JSX } from 'react'
 import './Tariffs.css'
 import type {content, tariffe} from "./tariffs.ts"
 import { Link } from 'react-router-dom'
+import Button from '../../shared/components/Button/Button.tsx'
 
 function TariffCharacteristics({service, tariffe}:{service:string,tariffe: tariffe}):JSX.Element{
   return (
@@ -14,6 +15,7 @@ function TariffCharacteristics({service, tariffe}:{service:string,tariffe: tarif
             <h3 className="tariffe_characteristic_text">{char}</h3>
         </li>))}
       </ul>
+      <Button textname="подробнее"/>
     </Link>
   )
 }
@@ -28,6 +30,7 @@ function ContentTariffs({service,tariffes}:{service:string, tariffes: tariffe[]}
          className={`tariffe ${index+1}`}
          >
           <TariffCharacteristics service={service} tariffe={tariffe} />
+          
         </li>
     ))}
     </ul>

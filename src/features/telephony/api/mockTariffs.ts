@@ -9,7 +9,7 @@ const contentData: content = {
             characteristics : [
                 "10 человек",
                 "1000 рублей",
-                "заебись гудки"
+                "гудки"
             ]
         },
         {

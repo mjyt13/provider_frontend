@@ -23,7 +23,7 @@ const contentData: content = {
         },
         {
             link:"slow",
-            name:"бабка",
+            name:"ползти",
             characteristics : [
                 "2 человек",
                 "20 рублей",

@@ -56,7 +56,8 @@
 }
 
 .tariffe-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     color: inherit; /* Наследует цвет текста от родителя */
@@ -66,6 +67,12 @@
 
 .tariffe-link:hover{
     color: darkblue
+}
+
+.generic_button{
+    align-self: center;
+    height: 3rem;
+    font-weight: bold;
 }
 
 .tariffe_name{

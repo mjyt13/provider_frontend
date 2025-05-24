@@ -22,10 +22,11 @@
 
 .service_name{
     border: solid 1px black;
-    padding: 2rem 4rem;
+    padding: 2rem 0rem;
     font-size: 40px;
     text-align: center;
     flex-shrink: 0;
+    width:20rem;
 }
 
 .service_description{
