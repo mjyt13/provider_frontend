@@ -1,0 +1,23 @@
+.add-tariff-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+}
+
+.add-tariff-fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add-tariff-field{
+    display: flex;
+    border: solid 1px;
+    text-align: center;
+    align-items: center;
+}
+/* 
+.tariff-inline{
+    border: solid 1px;
+} */

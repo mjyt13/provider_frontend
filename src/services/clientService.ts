@@ -3,6 +3,7 @@ import { apiClient } from './apiClient';
 
 export const fetchTariffClients = async (service: string | undefined, tariffLink: string | undefined) => {
   try {
+    console.log(service, tariffLink)
     const response = await apiClient.get(`/${service}/${tariffLink}/clients`);
     return response.data;
   } catch (error) {

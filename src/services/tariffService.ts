@@ -1,6 +1,6 @@
 // src/services/tariffService.ts
 import { apiClient } from './apiClient';
-import type { tariffe, content } from '../features/Tariffs/tariffs';
+import type { tariffe, content,TariffListResponse,TariffFormValues } from '../features/Tariffs/tariffs';
 
 interface ServerTariff {
   id: number;
@@ -27,4 +27,15 @@ export const fetchTariffList = async (service: string): Promise<content> => {
       ],
     })),
   };
+};
+
+export const addTariff = async (
+  service: string,
+  tariffData: TariffFormValues
+): Promise<void> => {
+  const response = await apiClient.post<ServerTariff>(`/${service}/tariffs`, tariffData);
+  
+  if (response.status !== 201) {
+    throw new Error('Не удалось создать тариф');
+  }
 };

@@ -29,6 +29,7 @@ export function useTariffClients(): tariffe_clients {
   };
 
   const clients: client[] = data.clients.map(c => ({
+    id:c.id,
     name: c.name,
     debt: c.debt,
     expiration: new Date(c.expirationDate),

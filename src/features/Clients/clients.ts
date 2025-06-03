@@ -5,6 +5,7 @@ export type tariffe_header ={
 }
 
 export type client = {
+    id?: number,
     name: string,
     expiration:Date,
     debt: number

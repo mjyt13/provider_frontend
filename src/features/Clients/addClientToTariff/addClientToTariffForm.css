@@ -1,0 +1,19 @@
+.add-contract-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+}
+
+.add-contract-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add-contract{
+    display: flex;
+    border: solid 1px;
+    text-align: center;
+    align-items: center;
+}

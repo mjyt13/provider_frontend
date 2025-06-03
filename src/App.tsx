@@ -4,6 +4,8 @@ import MainPage from './pages/MainPage/MainPage';
 import TariffesPage from './pages/TariffsPage/TariffsPafe';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import ClientsPage from './pages/ClientsPage/ClientsPage';
+import AddContractPage from './pages/AddContractPage/AddContractPage';
+import ClientDetailsPage from './pages/ClientDetailsPage/ClientDetailsPage';
 import './App.css';
 import { fetchTariffClients } from './services/clientService';
 import { fetchTariffList } from './services/tariffService';
@@ -34,6 +36,21 @@ const router = createBrowserRouter([
     }
   },
   {
+    path: "/clients/:id",
+    element: <ClientDetailsPage />,
+    loader: async ({ params }) => {
+        const clientId = params.id;
+        const serviceType = params.serviceType;
+
+        const res = await fetch(`http://localhost:9090/api/clients/${clientId}`);
+        if (!res.ok) {
+            throw new Response("Клиент не найден", { status: 404 });
+        }
+        
+        return res.json();
+    },
+  },
+  {
     path: ':service/:tariffLink/clients',
     element: <ClientsPage />,
     loader: async ({ params }) => {
@@ -50,9 +67,15 @@ const router = createBrowserRouter([
       }    
     },
   },
+  {
+    path: '/contracts/new',
+    element: <AddContractPage />,
+    errorElement: <ErrorPage />
+  }
 ]);
 
 function App() {
+  console.log("а мы в апп")
   return <RouterProvider router={router}></RouterProvider>
 }
 
